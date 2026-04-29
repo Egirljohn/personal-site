@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #1e3a8a;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body {
+  font-family: 'Orbitron', 'Courier New', monospace;
+  background: #000;
+  color: #1e3a8a;
+  padding: 2rem 1rem;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1e3a8a;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #60a5fa;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+code {
+  background: #111;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Orbitron', monospace;
+  font-size: 0.9em;
+  color: #1e3a8a;
+  border: 1px solid #1e3a8a;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+li {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+}
+
+li strong {
+  font-weight: 500;
+  color: #1e3a8a;
+}
+
+a {
+  color: #1e3a8a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+#buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.2s, opacity 0.2s;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+#buttons img {
+  max-width: 88px;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  transition: filter 0.2s;
+}
+
+#buttons a:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+#buttons a:hover img {
+  filter: brightness(1.1);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}

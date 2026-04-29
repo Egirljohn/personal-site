@@ -1,0 +1,130 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1e2e;
+  color: white;
+  font-family: monospace, monospace;
+  font-weight: 400;
+  margin-top: 0;
+  width: calc(100vw - 2em); }
+
+@media print {
+  body::before {
+    content: "magmaus3.eu.org"; } }
+
+@media screen {
+  nav {
+    display: flex;
+    border-bottom: 1px solid #585b70;
+    box-shadow: 0px 5px 15px #020202;
+    margin-left: 2em;
+    margin-top: 0em;
+    margin-right: 2em; } }
+
+@media print {
+  nav {
+    display: none; } }
+
+nav a {
+  width: fit-content;
+  padding: 0.5em 1em;
+  margin: 0em 1em;
+  border-radius: 0.1em;
+  box-shadow: 0px -1px 3px black;
+  border-bottom: none !important;
+  transition: box-shadow 200ms cubic-bezier(0.19, 1, 0.22, 1), background-color 200ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+nav a:hover {
+  box-shadow: 0px 0px 25px black;
+  background-color: #45475a; }
+
+a {
+  color: #f5c2e7;
+  text-decoration: none;
+  border-bottom: 1.5px dotted #f5c2e7; }
+
+main {
+  padding: 1em; }
+  @media screen and (max-width: 40em) {
+    main {
+      padding: 0.5em; } }
+article {
+  padding: 1em; }
+
+img {
+  max-width: 100%; }
+
+blockquote {
+  border-left: 2px solid gray;
+  padding-left: 1em; }
+
+code {
+  background-color: #45475a;
+  border: 1px solid #585b70;
+  border-radius: 0.2em; }
+
+pre > code {
+  background-color: inherit;
+  border: initial; }
+
+pre {
+  width: fit-content;
+  padding: 0.5em;
+  background-color: #45475a;
+  border: 2px solid #585b70;
+  border-radius: 0.3em; }
+
+.long-text {
+  overflow-wrap: break-word; }
+
+/* qr codes */
+.qrcode {
+  flex-direction: column;
+  max-width: 20rem;
+  image-rendering: pixelated; }
+
+/* Buttons for the homepage :3 */
+/*#buttons {*/
+/*  width: 100%;*/
+/*  height: max-content;*/
+/*  display: flex;*/
+/*  flex-wrap: wrap; }*/
+
+@media screen and (min-width: 968px) {
+  #buttons {
+    width: 968px; } }
+
+/*#buttons img {*/
+/*  width: auto !important;*/
+/*  display: flex;*/
+/*  image-rendering: pixelated;*/
+/*  !* height: 2em; *! }*/
+
+#buttons > a {
+  display: flex;
+  width: fit-content;
+  border-bottom: initial !important; }
+
+/* Notice boxes */
+.notice {
+  font-size: small;
+  border: 1px solid white;
+  width: fit-content;
+  border-radius: 1em;
+  padding: 0;
+  background-color: #313244; }
+  .notice #header {
+    padding: 0.5em;
+    border-radius: 1em 1em 0em 0em; }
+  .notice #content {
+    padding: 1em; }
+
+.notice.warn {
+  border-color: #fab387; }
+  .notice.warn #header {
+    background-color: #ffff0030; }
+
+.notice.note {
+  border-color: #89b4fa; }
+  .notice.note #header {
+    background-color: #20A0F050; }
