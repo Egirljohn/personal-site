@@ -8,6 +8,12 @@ module.exports = merge(common, {
     liveReload: true,
     hot: true,
     open: true,
-    static: ['./'],
+    static: {
+      directory: './',
+      watch: true,
+    },
+    devMiddleware: {
+      writeToDisk: false,
+    },
   },
 });

@@ -16,9 +16,9 @@ body {
   nav {
     display: flex;
     border-bottom: 1px solid #585b70;
-    box-shadow: 0px 5px 15px #020202;
+    box-shadow: 0 5px 15px #020202;
     margin-left: 2em;
-    margin-top: 0em;
+    margin-top: 0;
     margin-right: 2em; } }
 
 @media print {
@@ -28,14 +28,14 @@ body {
 nav a {
   width: fit-content;
   padding: 0.5em 1em;
-  margin: 0em 1em;
+  margin: 0 1em;
   border-radius: 0.1em;
-  box-shadow: 0px -1px 3px black;
+  box-shadow: 0 -1px 3px black;
   border-bottom: none !important;
   transition: box-shadow 200ms cubic-bezier(0.19, 1, 0.22, 1), background-color 200ms cubic-bezier(0.19, 1, 0.22, 1); }
 
 nav a:hover {
-  box-shadow: 0px 0px 25px black;
+  box-shadow: 0 0 25px black;
   background-color: #45475a; }
 
 a {
@@ -77,35 +77,23 @@ pre {
 .long-text {
   overflow-wrap: break-word; }
 
-/* qr codes */
 .qrcode {
   flex-direction: column;
   max-width: 20rem;
   image-rendering: pixelated; }
 
-/* Buttons for the homepage :3 */
-/*#buttons {*/
-/*  width: 100%;*/
-/*  height: max-content;*/
-/*  display: flex;*/
-/*  flex-wrap: wrap; }*/
 
 @media screen and (min-width: 968px) {
   #buttons {
     width: 968px; } }
 
-/*#buttons img {*/
-/*  width: auto !important;*/
-/*  display: flex;*/
-/*  image-rendering: pixelated;*/
-/*  !* height: 2em; *! }*/
 
 #buttons > a {
   display: flex;
   width: fit-content;
   border-bottom: initial !important; }
 
-/* Notice boxes */
+
 .notice {
   font-size: small;
   border: 1px solid white;
@@ -115,7 +103,7 @@ pre {
   background-color: #313244; }
   .notice #header {
     padding: 0.5em;
-    border-radius: 1em 1em 0em 0em; }
+    border-radius: 1em 1em 0 0; }
   .notice #content {
     padding: 1em; }
 
