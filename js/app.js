@@ -12,9 +12,6 @@ function shaderbg() {
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setClearColor(0x181825, 1);
 
-  const gl = renderer.getContext();
-  const webglVersion = gl.getParameter(gl.VERSION);
-
   const scene = new THREE.Scene();
   const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
 

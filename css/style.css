@@ -28,13 +28,12 @@ html.has-shader {
 }
 
 body {
-  font-family: 'Orbitron', 'Courier New', monospace;
+  font-family: 'Orbitron', monospace;
   background: transparent;
   color: #1e3a8a;
   padding: 2rem 1rem;
 }
 
-/* Keep readable content above the shader canvas. */
 header,
 main {
   position: relative;
