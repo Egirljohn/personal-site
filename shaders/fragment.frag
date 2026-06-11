@@ -53,7 +53,7 @@ void main() {
     float t = u_time * 0.4;
     float val = warpedFbm(p, t);
 
-    float v = smoothstep(0.15, 0.85, val);
+    float v = smoothstep(0.4, 0.85, val);
 
     vec3 col = background;
     col = mix(col, primary, smoothstep(0.0,  0.55, v));
