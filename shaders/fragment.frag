@@ -2,7 +2,6 @@ precision highp float;
 uniform float u_time;
 uniform vec2 u_resolution;
 const vec3 background = vec3(24.0 / 255.0, 24.0 / 255.0, 37.0 / 255.0);
-const vec3 element = vec3(17.0 / 255.0, 17.0 / 255.0, 27.0 / 255.0);
 const vec3 text = vec3(205.0 / 255.0, 214.0 / 255.0, 244.0 / 255.0);
 const vec3 secondaryText = vec3(186.0 / 255.0, 194.0 / 255.0, 222.0 / 255.0);
 const vec3 line = vec3(108.0 / 255.0, 112.0 / 255.0, 134.0 / 255.0);
