@@ -5,3 +5,10 @@ node_modules
 dist
 .cache
 /.idea/vcs.xml
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
