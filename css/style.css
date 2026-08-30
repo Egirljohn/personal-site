@@ -75,11 +75,6 @@ h2 {
   margin-bottom: 1rem;
 }
 
-p {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
-
 code {
   background: #111;
   padding: 0.2rem 0.5rem;
@@ -167,6 +162,12 @@ a:hover {
   gap: 2.5rem;
   margin-top: 2rem;
   margin-bottom: 4rem;
+}
+
+.germany-gradient {
+  background: linear-gradient(67deg, #000000, #DD0000, #FFCC00);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .project-card {
